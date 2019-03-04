@@ -66,6 +66,7 @@ sleep 3;
 echo -e "\nTurning on wlan0...\n"
 sudo ifconfig wlan0 up
 sleep 3;
-echo -e "\nMAC Address has been changed on the $netinter interface to ${YELLOW}$maccy${nc}\n\n"
+echo -e "\nMAC Address has been changed on the $netinter interface to ${YELLOW}$maccy${nc}\n"
 sleep 1;
+echo -e "Now run ifconfig $netinter and check the change\n"
 exit
